@@ -1,0 +1,16 @@
+{
+  "tests": "./specs/**/*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "Nightmare": {
+      "url": "http://reco-dev.thedevhouse.uk"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "acdd"
+}
