@@ -3,12 +3,24 @@
   "timeout": 10000,
   "output": "./output",
   "helpers": {
-    "Nightmare": {
-      "url": "http://reco-dev.thedevhouse.uk"
+    "WebDriverIO": {
+      "url": "http://reco-dev.thedevhouse.uk",
+      "host": "d475675ea24de6e8cbff6271d76e17c3:96f16a50a0b890eaa5d0114ac52c7025@hub.testingbot.com",
+      "port": 80,
+      "browser": "chrome",
+      "window_size": "1024x768",
+      "capabilities": {
+        "name": "XP Chrome 1024x768",
+        "browserName": "chrome",
+        "platform": "XP",
+        "unexpectedAlertBehaviour": "accept",
+        "build": "1.0.1"
+      }
     }
   },
   "include": {
-    "I": "./steps_file.js"
+    "I": "./steps_file.js",
+    "loginPage": "./pages/Login.js"
   },
   "bootstrap": false,
   "mocha": {},

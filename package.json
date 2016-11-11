@@ -8,13 +8,21 @@
   },
   "devDependencies": {
     "codeceptjs": "^0.4.8",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.1.2",
     "nightmare": "^2.8.1",
     "nightmare-upload": "^0.1.1",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^1.2.2",
+    "typescript": "^2.0.9",
     "wdio-selenium-standalone-service": "0.0.7",
     "webdriverio": "^4.4.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "codeceptjs run",
+    "testDbg": "codeceptjs run --verbose",
+    "tests": "mocha",
+    "defs": "codeceptjs def"
   },
   "author": "JH",
   "license": "ISC"
